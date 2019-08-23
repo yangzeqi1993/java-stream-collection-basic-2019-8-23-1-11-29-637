@@ -1,6 +1,8 @@
 package com.thoughtworks.collection;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import java.util.LinkedList;
+
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
 
@@ -13,10 +15,16 @@ public class Filter {
     }
 
     public List<Integer> filterEven() {
-        throw new NotImplementedException();
+    	List<Integer>  result = new LinkedList<>();
+        for(int i = 0;i<array.size();i++) {
+        	if(array.get(i)%2 == 0) {
+        		result.add(array.get(i));
+        	}
+        }
+        return result;
     }
-
-    public List<Integer> filterMultipleOfThree() {
-        throw new NotImplementedException();
-    }
+//
+//    public List<Integer> filterMultipleOfThree() {
+//        throw new NotImplementedException();
+//    }
 }
