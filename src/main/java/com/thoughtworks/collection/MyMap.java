@@ -31,7 +31,17 @@ public class MyMap {
         return result;
     }
 
-//    public List<Integer> sortFromSmall() {
-//        throw new NotImplementedException();
-//    }
+    public List<Integer> sortFromSmall() {
+       List<Integer> result = new ArrayList<Integer>(array);
+       for(int i = 0; i<result.size()-1; i++) {
+    	   for (int j=i+1;j<result.size();j++) {
+    		   if(result.get(i)>result.get(j)) {
+    			   int temp = result.get(j);
+    			   result.set(j,result.get(i));
+    			   result.set(i, temp);
+    		   }
+    	   }
+       }
+       return result;
+    }
 }
