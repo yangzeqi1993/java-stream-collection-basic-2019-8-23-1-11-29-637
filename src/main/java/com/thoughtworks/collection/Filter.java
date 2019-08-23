@@ -23,8 +23,14 @@ public class Filter {
         }
         return result;
     }
-//
-//    public List<Integer> filterMultipleOfThree() {
-//        throw new NotImplementedException();
-//    }
+
+    public List<Integer> filterMultipleOfThree() {
+         List<Integer>  result = new LinkedList<>();
+        for(int i = 0;i<array.size();i++) {
+        	if(array.get(i)%3 == 0) {
+        		result.add(array.get(i));
+        	}
+        }
+        return result;
+    }
 }

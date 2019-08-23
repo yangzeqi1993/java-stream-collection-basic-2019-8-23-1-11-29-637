@@ -22,17 +22,17 @@ public class FilterTest {
         assertThat(filter.filterEven()).isEqualTo(resultList);
     }
 
-//    @Test
-//    public void should_return_multiple_of_three() {
-//        //求数组中3的倍数
-//        Integer[] array = new Integer[]{6, 2, 3, 4, 9};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Filter filter = new Filter(arrayList);
-//
-//        Integer[] result = new Integer[]{6, 3, 9};
-//        List<Integer> resultList = Arrays.asList(result);
-//
-//        assertThat(filter.filterMultipleOfThree()).isEqualTo(resultList);
-//    }
+    @Test
+    public void should_return_multiple_of_three() {
+        //求数组中3的倍数
+        Integer[] array = new Integer[]{6, 2, 3, 4, 9};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Filter filter = new Filter(arrayList);
+
+        Integer[] result = new Integer[]{6, 3, 9};
+        List<Integer> resultList = Arrays.asList(result);
+
+        assertThat(filter.filterMultipleOfThree()).isEqualTo(resultList);
+    }
 }
