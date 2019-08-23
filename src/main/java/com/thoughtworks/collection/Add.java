@@ -27,8 +27,16 @@ public class Add {
         }
         return sum;
     }
-//
-//    public double getAverageOfEven(List<Integer> arrayList) {
-//        throw new NotImplementedException();
-//    }
+
+    public double getAverageOfEven(List<Integer> arrayList) {
+        int sum = 0;
+        int count = 0;
+        for (int i =0;i < arrayList.size(); i++) {
+        	if(arrayList.get(i)%2==0) {
+        		sum += arrayList.get(i);
+        		count ++;
+        	}
+        }
+        return (double)sum/count;
+    }
 }

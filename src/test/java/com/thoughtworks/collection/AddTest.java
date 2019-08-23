@@ -30,14 +30,14 @@ public class AddTest {
 
         assertThat(add.getSumTripleAndAddTwo(arrayList)).isEqualTo(390);
     }
-//
-//    @Test
-//    public void should_return_average_of_even() {
-//        //求数组中所有偶数的平均数
-//        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Add add = new Add();
-//        assertThat(add.getAverageOfEven(arrayList)).isEqualTo((double) 3);
-//    }
+
+    @Test
+    public void should_return_average_of_even() {
+        //求数组中所有偶数的平均数
+        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Add add = new Add();
+        assertThat(add.getAverageOfEven(arrayList)).isEqualTo((double) 3);
+    }
 }
