@@ -21,18 +21,18 @@ public class MyMapTest {
 
         assertThat(myMap.sortFromBig()).isEqualTo(resultList);
     }
-
-    @Test
-    public void should_sort_from_small_to_big() {
-        //从小到大排序
-        Integer[] array = new Integer[]{3, 2, 4, 5, 1};
-        List<Integer> list = Arrays.asList(array);
-
-        MyMap myMap = new MyMap(list);
-
-        Integer[] result = new Integer[]{1, 2, 3, 4, 5};
-        List<Integer> resultList = Arrays.asList(result);
-
-        assertThat(myMap.sortFromSmall()).isEqualTo(resultList);
-    }
+//
+//    @Test
+//    public void should_sort_from_small_to_big() {
+//        //从小到大排序
+//        Integer[] array = new Integer[]{3, 2, 4, 5, 1};
+//        List<Integer> list = Arrays.asList(array);
+//
+//        MyMap myMap = new MyMap(list);
+//
+//        Integer[] result = new Integer[]{1, 2, 3, 4, 5};
+//        List<Integer> resultList = Arrays.asList(result);
+//
+//        assertThat(myMap.sortFromSmall()).isEqualTo(resultList);
+//    }
 }
