@@ -19,17 +19,17 @@ public class AddTest {
         assertThat(add.getSumOfEvens(leftBorder, rightBorder)).isEqualTo(30);
         assertThat(add.getSumOfEvens(rightBorder, leftBorder)).isEqualTo(30);
     }
-//
-//    @Test
-//    public void should_get_triple_and_add_two() {
-//        //求数组中每个元素的3倍加2的和
-//        Integer[] array = new Integer[]{1, 5, 7, 11, 35, 67};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Add add = new Add();
-//
-//        assertThat(add.getSumTripleAndAddTwo(arrayList)).isEqualTo(390);
-//    }
+
+    @Test
+    public void should_get_triple_and_add_two() {
+        //求数组中每个元素的3倍加2的和
+        Integer[] array = new Integer[]{1, 5, 7, 11, 35, 67};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Add add = new Add();
+
+        assertThat(add.getSumTripleAndAddTwo(arrayList)).isEqualTo(390);
+    }
 //
 //    @Test
 //    public void should_return_average_of_even() {

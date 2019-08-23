@@ -20,9 +20,13 @@ public class Add {
        return sum;
     }
 
-//    public int getSumTripleAndAddTwo(List<Integer> arrayList) {
-//        throw new NotImplementedException();
-//    }
+    public int getSumTripleAndAddTwo(List<Integer> arrayList) {
+        int sum = 0;
+        for (int i =0;i < arrayList.size(); i++) {
+        	sum += arrayList.get(i)*3+2;
+        }
+        return sum;
+    }
 //
 //    public double getAverageOfEven(List<Integer> arrayList) {
 //        throw new NotImplementedException();
